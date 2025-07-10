@@ -2,17 +2,38 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=300, initial-scale=1.0">
     <title>Artbot Banner</title>
     <link rel="stylesheet" href="Artbot-Banner.css">
 </head>
 <body>
     <div class="banner-container">
-        <div class="banner-content">
-            <!-- Banner content will go here -->
+        <!-- Logo -->
+        <div class="logo">
+            <img src="images/artbot-logo.png" alt="Mulberry Logo">
+        </div>
+        <!-- Banner Content -->
+        <div class="banner-content" id="adCarousel">
+            <!-- Courousel Images -->
+            <img src=""" alt="" class="img1 active"/>
+            <img src=""" alt="" class="img2"/>
+            <img src=""" alt="" class="img3"/>
+            <img src=""" alt="" class="img4"/>
+            <!-- Carousel Headings  -->
+            <div class="carousel-heading active">Heading 1</div>
+            <div class="carousel-heading">Heading 2</div>
+            <div class="carousel-heading">Heading 3</div>
+            <div class="carousel-heading">Heading 4</div>
+            <!--Carousel Controls-->
+            <button class="carousel-arrow left" id="previous" alt="Previous Button">
+                <img src="images/arrow-left.png"  id="arrowLeft" alt="Previous">
+            </button>
+            <button class="carousel-arrow right" id="next" alt="Next Button">
+                <img src="images/arrow-right.png" id="arrowRight" alt="Next">
+            </button>
         </div>
     </div>
-    
+    <!-- Script Test update--> 
     <script src="Artbot-Banner.js"></script>
 </body>
 </html> 

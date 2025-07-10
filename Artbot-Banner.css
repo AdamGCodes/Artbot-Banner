@@ -1,4 +1,9 @@
 /* Reset and base styles */
+html {
+    width: 300px;
+    height: 600px;
+}
+
 * {
     margin: 0;
     padding: 0;
