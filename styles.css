@@ -1,0 +1,150 @@
+/* Reset and base styles */
+html {
+    width: 300px;
+    height: 600px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: 'BemboStd';
+    src: url('assets/fonts/BemboStd.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'BemboStd', Arial, sans-serif;
+    background-color: #f5f5f5;
+}
+
+.banner-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 300px;
+    height: 600px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    background: #222;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.banner-content {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-start;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+}
+
+.logo img {
+    display: block;
+    max-width: 200px;
+    height: auto;
+}
+
+.carousel-image {
+    align-self: flex-start;
+    margin-bottom: 10px;
+    width: 100%;
+    height: 390px;
+    object-fit: cover;
+    object-position: center top;
+    display: none;
+    left: 0;
+}
+
+.carousel-image.active {
+    display: block;
+    z-index: 1;
+}
+
+.carousel-heading {
+    position: absolute;
+    bottom: 90px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #000;
+    font-size: 1.5rem;
+    opacity: 0;
+    z-index: 2;
+    pointer-events: none;
+    display: none;
+}
+
+.carousel-heading.active {
+    opacity: 1;
+    pointer-events: auto;
+    display: block;
+}
+
+.carousel-arrow {
+    background: none;
+    border: none;
+    padding: 0;
+    margin: 0;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 130px;
+    transform: translateY(-50%);
+    width: 32px;
+    height: 32px;
+    z-index: 3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-arrow:hover {
+    color: #fff;
+}
+
+.carousel-arrow.left {
+    left: 10px;
+    transform: rotate(180deg);
+}
+
+.carousel-arrow.right {
+    right: 10px;
+    transform: rotate(0deg);
+}
+
+.call-to-action {
+    position: absolute;
+    text-align: center;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'BemboStd', Arial, sans-serif;
+}
+
+.call-to-action a {
+    color: #000;
+}
