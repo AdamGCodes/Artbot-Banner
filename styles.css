@@ -112,7 +112,7 @@ body {
     outline: none;
     cursor: pointer;
     position: absolute;
-    top: 50%;
+    bottom:120px;
     transform: translateY(-50%);
     width: 32px;
     height: 32px;
